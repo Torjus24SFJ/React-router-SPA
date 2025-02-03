@@ -9,8 +9,6 @@
 .main_content_container {
   display: flex;
   justify-content: center;
-  /* flex-direction: column; */
-  min-height: 100vh;
   background-color: #fafafa;
   font-family: "Inter", serif;
 }
