@@ -8,6 +8,20 @@ const {data, error, isLoading} = useSWR("https://restcountries.com/v2/all", fetc
 
 const [countries, setCountries] = useState([]);
 
+/* TODO sort countries by search term input
+
+const [searchTerm, setSearchTerm] = useState("");
+const [names, setNames] = useState([]);
+
+useEffect(() => {
+  if (searchTerm === "") {
+    setNames([]);
+    return;
+  }
+}, [searchTerm, data]);
+
+ */
+
 useEffect(() => {
   if (data && countries.length === 0) {
     setCountries(data.slice(0, 8));
@@ -21,6 +35,8 @@ const shuffleCountries = () => {
     setCountries(shuffled);
   }
 }
+
+
 
 if(isLoading) return <div>Loading...</div>
 if(error) return <div>Error loading data</div>
