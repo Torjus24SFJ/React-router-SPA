@@ -1,0 +1,17 @@
+.grid_gallery_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.picture_card {
+    height: 200px;
+    width: 200px;
+    background-color: #909090;
+}
+
+.grid_gallery_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
