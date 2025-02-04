@@ -35,3 +35,7 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
+
+.filtered_button {
+    margin: 20px;
+}
