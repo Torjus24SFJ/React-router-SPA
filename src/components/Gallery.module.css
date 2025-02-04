@@ -21,3 +21,17 @@
     height: 50px;
     margin: 15px;
 }
+
+
+.searchCountry {
+    padding: 20px;
+    width: 220px;
+    height: 50px;
+    margin: 15px;
+}
+
+.top_buttons_flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
